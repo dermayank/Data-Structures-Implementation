@@ -54,10 +54,9 @@ int kruskal(vii &adj, vii &mst, vi &parent, vi &rank, int size){
 	vii::iterator it;
 
 	for(it = adj.begin();it!= adj.end(); it++){
-		//cout<<"going in for"<<it->first<<" "<<it->second.first<<" "<<it->second.second<<endl;
 		find_union(parent, rank, mst, it->first,it->second.first,it->second.second);
-		//<<"out for"<<it->first<<" "<<it->second.first<<" "<<it->second.second<<endl;
 	}
+	return 0;
 }
 
 
